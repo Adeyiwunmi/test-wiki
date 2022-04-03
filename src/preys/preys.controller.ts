@@ -1,4 +1,13 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 
 @Controller('preys')
-export class PreysController {}
+export class PreysController {
+  /**
+   * Says hello
+   * @returns Striing
+   */
+  @Get()
+  sayHello(): string {
+    return 'prey controller';
+  }
+}
