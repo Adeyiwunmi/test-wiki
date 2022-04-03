@@ -42,7 +42,7 @@ jobs:
           git config --global user.name "Wiki mirror"
           DOCUMENTATION_PATH = ${WORKSPACE_URL/test-wiki\/test-wiki/test-wiki\/Documentation/classes}
           # cp $GITHUB_WORKSPACE/Documentation $GITHUB_WORKSPACE/test-wiki.wiki
-          cp $DOCUMENTATION_PATH $GITHUB_WORKSPACE/test-wiki.wiki
+          cp ${WORKSPACE_URL/test-wiki\/test-wiki/test-wiki\/Documentation/classes} $GITHUB_WORKSPACE/test-wiki.wiki
           cd $GITHUB_WORKSPACE/test-wiki.wiki
           rename.ul -v .txt .md *.txt
           git add .
