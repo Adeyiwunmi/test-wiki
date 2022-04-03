@@ -1,6 +1,6 @@
 name: "Mirror doc/ to wiki"
 
-# Run on changes to the `doc` directory on the `master` branch
+
 on:
   push:
     branches:
