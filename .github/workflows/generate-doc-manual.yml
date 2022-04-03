@@ -39,7 +39,7 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "Wiki mirror"
-          cp $GITHUB_WORKSPACE/test-wiki/Documentation $GITHUB_WORKSPACE/test-wiki.wiki
+          cp $GITHUB_WORKSPACE/Documentation $GITHUB_WORKSPACE/test-wiki.wiki
           cd $GITHUB_WORKSPACE/test-wiki.wiki
           rename.ul -v .txt .md *.txt
           git add .
