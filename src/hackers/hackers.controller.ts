@@ -4,7 +4,7 @@ import { Controller, Get } from '@nestjs/common';
 export class HackersController {
   /**
    * Says bad things
-   * @returns Striing
+   * @returns String
    */
   @Get()
   sayBadTHings(): string {
