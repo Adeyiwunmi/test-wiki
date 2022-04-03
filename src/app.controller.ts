@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   /**
-   * takes in nothing
+   * takes in nothing, or sometimes all you haveeeeee
    * @returns Striing
    */
   @Get()
